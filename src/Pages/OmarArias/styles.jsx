@@ -26,6 +26,52 @@ export const StyledOmarArias = styled.div`
     @import url('https://api.fontshare.com/css?f[]=pally@400&display=swap');
 `;
 
+export const StyledFloatingMenu = styled.button`
+    color: #99A3A4;
+    position: fixed;
+    top: 450px;
+    left: 35px;
+    width: 50px;
+    height: 50px;
+    background-color: #E67E22;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 8px 10px 12px -11px rgba(0,0,0,0.75);
+    @keyframes vibrate-2{0%{transform:translate(0)}20%{transform:translate(2px,-2px)}40%{transform:translate(2px,2px)}60%{transform:translate(-2px,2px)}80%{transform:translate(-2px,-2px)}100%{transform:translate(0)}}
+    :hover {
+        animation: vibrate-2 .2s linear both;
+        cursor: pointer;
+    }
+    @media (max-width: 599px) {
+        display: none;   
+    }
+`;
+
+export const StyledFloatingHamburger = styled.button`
+    z-index: 1;
+    color: #99A3A4;
+    position: fixed;
+    top: 40px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #E67E22;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 8px 10px 12px -11px rgba(0,0,0,0.75);
+    @keyframes vibrate-2{0%{transform:translate(0)}20%{transform:translate(2px,-2px)}40%{transform:translate(2px,2px)}60%{transform:translate(-2px,2px)}80%{transform:translate(-2px,-2px)}100%{transform:translate(0)}}
+    :hover {
+        animation: vibrate-2 .2s linear both;
+    }
+    @media (min-width: 599px) {
+        display: none;   
+    }
+`;
+
+export const StyledSvgUp = styled.svg`
+    fill: white;
+`;
+
 export const BgBlur = styled.div`
     background-image: url(${blurNice});
     height: 100vh;
@@ -44,6 +90,10 @@ export const StyledHeader = styled.header`
     ${normalFont()};
     padding-top: 15px;
     color: white;
+    @media (max-width: 599px) {
+        flex-direction: column;
+        padding-top: 40px;
+    }
 `;
 
 export const StyledAllLogo = styled.div`
@@ -53,6 +103,10 @@ export const StyledAllLogo = styled.div`
     ${titleFont()};
     flex-direction: row;
     width: 16%;
+    @media (max-width: 599px) {
+        width: 100vw;
+        flex-direction: column;
+    }
 `;
 
 export const StyledHeaderLogo = styled.img`
@@ -61,17 +115,30 @@ export const StyledHeaderLogo = styled.img`
 
 export const StyledLogoName = styled.h1`
     ${fit()};
+    @media (max-width: 499px) {
+        margin-top: 5px;
+    }
 `;
 
 export const StyledUl = styled.ul`
     ${center()};
     flex-direction: row;
     list-style: none;
+    @media (max-width: 599px) {
+        display: none;
+    }
 `;
 
 export const StyledLi = styled.li`
-    margin: 0 15px;
-    cursor: pointer;
+    margin: 0 10px;
+    padding: 5px;
+    border: 1px inset rgba(198, 198, 198, 0.5);
+    border-radius: 5px;
+    :hover {
+        cursor: pointer;
+        color: black;
+        background-color: white;
+    }
 `;
 
 export const StyledHero = styled.div`
@@ -83,10 +150,29 @@ export const StyledHero = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    @media (max-width: 599px) {
+        flex-direction: column-reverse;
+        height: 75%;
+    }
+    @media (max-width: 799px) {
+        flex-direction: column-reverse;
+    }
 `;
 
 export const StyledHeroTitle = styled.h1`
     font-size: 50px;
+    @media (max-width: 599px) {
+        font-size: 35px;
+        text-align: center;
+    }
+`;
+
+export const StyledHeroGrow = styled.span`
+    color: #5fa4fe;
+`;
+
+export const StyledHeroEngineer = styled.span`
+    color: #ecda00;
 `;
 
 export const StyledHeroLogo = styled.img`
@@ -126,6 +212,9 @@ export const StyledLogoSection = styled.section`
     width: 50%;
     flex-wrap: wrap;
     justify-content: center;
+    @media (max-width: 599px) {
+        width: 100%;
+    }
 `;
 
 export const StyledLogoContainer = styled.div`
@@ -135,10 +224,38 @@ export const StyledLogoContainer = styled.div`
     margin: 15px;
     background-color: rgba(162, 162, 162, 0.4);
     border-radius: 10px;
+    :hover {
+        background-color: rgba(231, 231, 231, 0.4);
+    }
+    @media (max-width: 599px) {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
 `;
 
 export const StyledSkillsLogo = styled.img`
     width: 50px;
+    @keyframes pulsate-bck {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+        50% {
+            -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+        }
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
+    :hover {
+        animation: pulsate-bck 0.5s ease-in-out both;
+    }
+    @media (max-width: 599px) {
+        width: 40px;
+    }
 `;
 
 export const StyledPorfolio = styled.div`
@@ -153,6 +270,9 @@ export const StyledPorfolioContent = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
+    @media (max-width: 599px) {
+        padding: 0;
+    }
 `;
 
 export const StyledTitlePorfolio = styled.h1`
@@ -165,6 +285,9 @@ export const StyledHrContainerRight = styled.div`
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 599px) {
+        justify-content: flex-start;
+    }
 `;
 
 export const StyledPortfolioHr = styled.hr`
@@ -173,6 +296,9 @@ export const StyledPortfolioHr = styled.hr`
     height: 5px;
     background-color: #55ffff;
     border: none;
+    @media (max-width: 599px) {
+        display: none;
+    }
 `;
 
 export const StyledProjectCard = styled.div`
@@ -184,18 +310,28 @@ export const StyledProjectCard = styled.div`
     align-items: center;
     justify-content: center;
     color: #00e699;
+    @media (max-width: 599px) {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
 `;
 
 export const StyledCardLink = styled.a`
     border: none;
     text-decoration: none;
     color: #00e699;
+    @media (max-width: 599px) {
+    }
 `;
 
 export const StyledCardTitle = styled.h2`
     margin: 0 0 10px 0;
     :hover {
         color: white;
+    }
+    @media (max-width: 599px) {
+        margin: 10px 0;
     }
 `;
 
@@ -208,6 +344,9 @@ export const StyledCardSection = styled.section`
 
 export const StyledProjectDescription = styled.p`
     width: 65%;
+    @media (max-width: 599px) {
+        display: none;
+    }
 `;
 
 export const StyledImageContainer = styled.div`
@@ -255,6 +394,12 @@ export const StyledMyTitle = styled.div`
     width: 80%;
     display: flex;
     flex-direction: column;
+    @media (max-width: 599px) {
+        margin: 20px 0;
+    }
+    @media (max-width: 599px) {
+        font-size: 25px;
+    }
 `;
 
 export const StyledTag = styled.span`
@@ -264,6 +409,10 @@ export const StyledTag = styled.span`
 
 export const StyledAboutMeTitle = styled.h1`
     margin: 0 0 0 15px;
+    @media (max-width: 599px) {
+        font-size: 50px;
+        width: 200px;
+    }
 `;
 
 export const StyledMyDescription = styled.div`
@@ -277,12 +426,21 @@ export const StyledDescriptionTitle = styled.h3`
     color: #91e041;
     margin: 0;
     position: relative;
+    @media (max-width: 599px) {
+        text-align: center;
+    }
+    @media (max-width: 699px) {
+        text-align: center;
+    }
 `;
 
 export const StyledStr = styled.img`
     margin-left: 38px;
     width: 200px;
     position: absolute;
+    @media (max-width: 599px) {
+        left: 60px;
+    }
 `;
 
 export const StyledEngineer = styled.span`
@@ -307,6 +465,9 @@ export const StyledDescription = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    @media (max-width: 499px) {
+        justify-content: center;
+    }
 `;
 
 export const StyledDescriptionText = styled.p`
@@ -315,6 +476,15 @@ export const StyledDescriptionText = styled.p`
     width: 65%;
     margin: 0 auto 0;
     color: #91e041;
+    @media (max-width: 499px) {
+        font-size: 20px;
+        width: 90vw;
+        margin-top: 20px;
+    }
+    @media (max-width: 699px) {
+        margin-top: 20px;
+    }
+
 `;
 
 export const StyledDescriptionFocus = styled.span`
@@ -328,6 +498,12 @@ export const StyledMyImageContainer = styled.div`
     width: 20%;
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
     border: 3px solid #91e041;
+    @media (max-width: 599px) {
+        display: none;
+    }
+    @media (max-width: 699px) {
+        display: none;
+    }
 `;
 
 export const StyledMyImage = styled.img`
@@ -365,6 +541,10 @@ export const StyledAble = styled.p`
     ${normalFont()};
     color: white;
     font-size: 30px;
+    margin-bottom: 45px;
+    @media (max-width: 665px) {
+        text-align: center;
+    }
 `;
 
 export const StyledLinksContainer = styled.div`
