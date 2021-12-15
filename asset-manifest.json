@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/omararias-portfolio/static/css/main.ebfc5def.chunk.css",
+    "main.js": "/omararias-portfolio/static/js/main.39063158.chunk.js",
+    "main.js.map": "/omararias-portfolio/static/js/main.39063158.chunk.js.map",
+    "runtime-main.js": "/omararias-portfolio/static/js/runtime-main.41449d13.js",
+    "runtime-main.js.map": "/omararias-portfolio/static/js/runtime-main.41449d13.js.map",
+    "static/js/2.734f19ed.chunk.js": "/omararias-portfolio/static/js/2.734f19ed.chunk.js",
+    "static/js/2.734f19ed.chunk.js.map": "/omararias-portfolio/static/js/2.734f19ed.chunk.js.map",
+    "index.html": "/omararias-portfolio/index.html",
+    "static/css/main.ebfc5def.chunk.css.map": "/omararias-portfolio/static/css/main.ebfc5def.chunk.css.map",
+    "static/js/2.734f19ed.chunk.js.LICENSE.txt": "/omararias-portfolio/static/js/2.734f19ed.chunk.js.LICENSE.txt",
+    "static/media/OA.5f02f7fd.png": "/omararias-portfolio/static/media/OA.5f02f7fd.png",
+    "static/media/atom4.1e889bd5.png": "/omararias-portfolio/static/media/atom4.1e889bd5.png",
+    "static/media/blur.a8163e0a.jpg": "/omararias-portfolio/static/media/blur.a8163e0a.jpg",
+    "static/media/bootstrap.e53d77fa.png": "/omararias-portfolio/static/media/bootstrap.e53d77fa.png",
+    "static/media/calculator.36af50ab.png": "/omararias-portfolio/static/media/calculator.36af50ab.png",
+    "static/media/express.bd60c4de.png": "/omararias-portfolio/static/media/express.bd60c4de.png",
+    "static/media/firebase.18e8cd69.png": "/omararias-portfolio/static/media/firebase.18e8cd69.png",
+    "static/media/git.db538452.png": "/omararias-portfolio/static/media/git.db538452.png",
+    "static/media/github.ffa70286.png": "/omararias-portfolio/static/media/github.ffa70286.png",
+    "static/media/java.f5dd86c3.png": "/omararias-portfolio/static/media/java.f5dd86c3.png",
+    "static/media/loginRandom.029bc673.png": "/omararias-portfolio/static/media/loginRandom.029bc673.png",
+    "static/media/mongodb.41ae1969.png": "/omararias-portfolio/static/media/mongodb.41ae1969.png",
+    "static/media/myPhoto2.4f7e1a17.jpg": "/omararias-portfolio/static/media/myPhoto2.4f7e1a17.jpg",
+    "static/media/mysql.279f5697.png": "/omararias-portfolio/static/media/mysql.279f5697.png",
+    "static/media/node.478c590a.png": "/omararias-portfolio/static/media/node.478c590a.png",
+    "static/media/postgreSQL.f94cfa2e.png": "/omararias-portfolio/static/media/postgreSQL.f94cfa2e.png",
+    "static/media/react.a544fd8c.png": "/omararias-portfolio/static/media/react.a544fd8c.png",
+    "static/media/redux.b3b939c6.png": "/omararias-portfolio/static/media/redux.b3b939c6.png",
+    "static/media/sass.c5213e47.png": "/omararias-portfolio/static/media/sass.c5213e47.png",
+    "static/media/sc.61b1069d.png": "/omararias-portfolio/static/media/sc.61b1069d.png",
+    "static/media/stripes.2712dcdd.svg": "/omararias-portfolio/static/media/stripes.2712dcdd.svg",
+    "static/media/todoapp.15d837bc.png": "/omararias-portfolio/static/media/todoapp.15d837bc.png",
+    "static/media/typescript.17936c69.png": "/omararias-portfolio/static/media/typescript.17936c69.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41449d13.js",
+    "static/js/2.734f19ed.chunk.js",
+    "static/css/main.ebfc5def.chunk.css",
+    "static/js/main.39063158.chunk.js"
+  ]
+}
