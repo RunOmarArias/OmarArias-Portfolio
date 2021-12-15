@@ -5,6 +5,7 @@ import Contact from './Contact';
 import Header from './Header';
 import Portfolio from './Portfolio';
 import Skills from './Skills';
+import Footer from './Footer';
 import {
     StyledOmarArias,
     BgBlur,
@@ -81,6 +82,7 @@ export default function OmarArias() {
             <BgLines>
                 <Contact />
             </BgLines>
+            <Footer />
         </StyledOmarArias>
     );
 }

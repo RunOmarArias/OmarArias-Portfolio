@@ -571,3 +571,18 @@ export const StyledLinkIcon = styled.svg`
         fill: #f0f000;
     }
 `;
+
+export const StyledFooter = styled.footer`
+    ${center()};
+    font-family: 'Pally', sans-serif;
+    height: 50px;
+    border-top: 2px solid #E67E22;
+    color: #E67E22;
+    background-color: #273333;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90' viewBox='0 0 90 90'%3E%3Ccircle fill='%2375BB48' cx='45' cy='45' r='10'/%3E%3Cg fill='%23428832' fill-opacity='1'%3E%3Ccircle cx='0' cy='90' r='10'/%3E%3Ccircle cx='90' cy='90' r='10'/%3E%3Ccircle cx='90' cy='0' r='10'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3C/g%3E%3C/svg%3E");
+`;
+
+export const StyledFooterContain = styled.p`
+    margin: 0;
+    padding: 0px 0;
+`;
